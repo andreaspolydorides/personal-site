@@ -8,7 +8,7 @@ const GOOGLE_FORM = {
    link:  optional URL (repo, paper, write-up). */
 const projects = [
   {
-    title: "3D printed, personalised wheelchair cushions",
+    title: "Printed, personalised wheelchair cushions",
     description: "Software personalising, 3D printing instructions of wheelchair cushions based on an individual's pressure map with the aim of improving pressure distribution.",
     image: "images/cushion.png",
     tags: ["3D printing", "Python", "Materials Testing"],
