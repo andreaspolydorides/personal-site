@@ -8,14 +8,14 @@ const GOOGLE_FORM = {
    link:  optional URL (repo, paper, write-up). */
 const projects = [
   {
-    title: "3D printed wheelchair cushions",
+    title: "3D printed, personalised wheelchair cushions",
     description: "Software personalising, 3D printing instructions of wheelchair cushions based on an individual's pressure map with the aim of improving pressure distribution.",
     image: "images/cushion.png",
     tags: ["3D printing", "Python", "Materials Testing"],
     link: ""
   },
   {
-    title: "Peltier Controller and Sensing Board",
+    title: "Peltier controller and sensing board",
     description: "A Raspberry Pi Pico PCB with Peltier cooler control circuitry, sensor inputs (e.g. thermistors), fan outputs and I2C expansion, designed in KiCad.",
     image: "",
     tags: ["Electronics", "KiCad", "Open Hardware"],
