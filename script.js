@@ -1,6 +1,6 @@
 
 const GOOGLE_FORM = {
-  action: "https://docs.google.com/forms/d/e/1FAIpQLSdNW68QwuezY8xzlOcrqW5Huw3keuGsRbGqRbahcjROY77xCw/formResponse?"
+  action: "https://docs.google.com/forms/d/e/1FAIpQLSdNW68QwuezY8xzlOcrqW5Huw3keuGsRbGqRbahcjROY77xCw/formResponse?",
   fields: { name: "entry.1817505469", email: "entry.559397126", message: "entry.290750087" }
 };
 
