@@ -1,10 +1,8 @@
 
 const GOOGLE_FORM = {
-  action: "https://docs.google.com/forms/d/e/1FAIpQLSdNW68QwuezY8xzlOcrqW5Huw3keuGsRbGqRbahcjROY77xCw/formResponse?",
+  action: "https://docs.google.com/forms/d/e/1FAIpQLSdNW68QwuezY8xzlOcrqW5Huw3keuGsRbGqRbahcjROY77xCw/formResponse",
   fields: { name: "entry.1817505469", email: "entry.559397126", message: "entry.290750087" }
 };
-
-
 /* ---------- Edit your projects here ----------
    image: path to a file in /images (16:10 works best). Leave "" for an automatic placeholder.
    link:  optional URL (repo, paper, write-up). */
