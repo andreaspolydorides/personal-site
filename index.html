@@ -45,10 +45,10 @@
   <!-- faint background traces -->
   <g class="bgtr" fill="none" stroke="#7b93b3" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" opacity="0.10">
     <polyline pathLength="1" style="--i:0" points="0,200 220,200 280,140 700,140 760,80 1100,80"/>
-    <polyline pathLength="1" style="--i:1" points="0,230 200,230 260,170 680,170 740,110 1100,110"/>
+    <polyline pathLength="1" style="--i:1" points="0,230 230,230 290,170 710,170 770,110 1100,110"/>
     <polyline pathLength="1" style="--i:2" points="1920,160 1700,160 1640,220 1300,220"/>
-    <polyline pathLength="1" style="--i:3" points="1920,860 1780,860 1720,920 1200,920 1140,980 900,980"/>
-    <polyline pathLength="1" style="--i:4" points="1920,890 1800,890 1740,950 1220,950 1160,1010 900,1010"/>
+    <polyline pathLength="1" style="--i:3" points="1920,830 1780,830 1720,890 1200,890 1140,950 940,950"/>
+    <polyline pathLength="1" style="--i:4" points="1920,860 1800,860 1740,920 1220,920 1160,980 940,980"/>
   </g>
 
   <!-- PCB traces (IC) -->
@@ -59,7 +59,7 @@
     <polyline pathLength="1" style="--i:3" points="392,530 330,530 270,590 150,590"/>
     <polyline pathLength="1" style="--i:4" points="392,570 350,570 290,630 290,760 200,820"/>
     <!-- right -->
-    <polyline pathLength="1" style="--i:5" points="648,450 720,450 780,390 1200,390 1290,300 1290,130 1330,90 1447,90"/>
+    <polyline pathLength="1" style="--i:5" points="648,450 720,450 780,390 1200,390"/>
     <polyline pathLength="1" style="--i:6" points="648,490 860,490"/>
     <polyline pathLength="1" style="--i:7" points="648,530 800,530"/>
   </g>
@@ -133,7 +133,7 @@
     <line x1="1460" y1="470" x2="1460" y2="489"/>
   </g>
   <circle cx="1450" cy="478" r="3.5" fill="#0b0e14" stroke="#fdba74" stroke-width="1.5" opacity="0.9"/>
-  <line x1="1450" y1="520" x2="1450" y2="527" stroke="#f97316" stroke-width="4" opacity="0.8"/>
+  
   </g>
 
   <!-- printed layers -->
@@ -150,16 +150,18 @@
   <!-- bed -->
   <rect x="940" y="626" width="820" height="12" rx="3" fill="#a9bdd6" opacity="0.25"/>
   <rect x="940" y="626" width="820" height="150" fill="url(#glow)" opacity="0.5"/>
-  <text x="1760" y="668" text-anchor="end" font-family="ui-monospace, 'JetBrains Mono', Consolas, monospace" font-size="14" fill="#fdba74" opacity="0.5">layer 0.2 mm · nozzle 0.4 · 220 °C</text>
+  <text x="1700" y="668" text-anchor="end" font-family="ui-monospace, 'JetBrains Mono', Consolas, monospace" font-size="14" fill="#fdba74" opacity="0.5">layer 0.2 mm · nozzle 0.4 · 285 °C</text>
+  <text x="1700" y="688" text-anchor="end" font-family="ui-monospace, 'JetBrains Mono', Consolas, monospace" font-size="14" fill="#fdba74" opacity="0.5">G1 X120 Y80 E0.4 F1800 ; layer 8</text>
+  
 
   <!-- terminal -->
   <g font-family="ui-monospace, 'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="22">
     <g class="term" opacity="0.65">
-      <text style="--i:0" x="120" y="920" fill="#a9bdd6">$ make flash</text>
-      <text style="--i:1" x="120" y="956" fill="#a9bdd6">$ gcode_send --hotend 220 --bed 60</text>
-      <text style="--i:2" x="120" y="992" fill="#fdba74">&gt; G1 X120 Y80 E0.4 F1800 ; layer 42</text>
-      <text style="--i:3" x="120" y="1028" fill="#a9bdd6">$</text>
-      <rect class="cursor" x="140" y="1011" width="12" height="22" fill="#a9bdd6" opacity="0.8"/>
+      <text style="--i:0" x="120" y="890" fill="#a9bdd6">$ make menuconfig</text>
+      <text style="--i:1" x="120" y="926" fill="#a9bdd6">$ ls /dev/serial/by-id/*</text>
+      <text style="--i:2" x="120" y="962" fill="#fdba74">&gt; make flash FLASH_DEVICE=/dev/serial/by-id/your_device_id</text>
+      <text style="--i:3" x="120" y="998" fill="#a9bdd6">$</text>
+      <rect class="cursor" x="140" y="981" width="12" height="22" fill="#a9bdd6" opacity="0.8"/>
     </g>
   </g>
 
@@ -168,7 +170,7 @@
 </svg>
   <div class="hero-text">
     <h1>Andreas Polydorides</h1>
-    <p class="lead">Research and Innovation Engineer at University of Cyprus, PhD student at University College London</p>
+    <p class="lead"> Research and Innovation Engineer at the University of Cyprus,<br>PhD student at University College London</p>
     <p><a class="btn" href="#projects">See projects</a></p>
   </div>
 </section>
